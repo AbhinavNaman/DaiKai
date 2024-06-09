@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  /* min-width: 800px; */
+}
+
+.card {
+  min-width: 350px;
+  /* min-height: 600px; */
+  flex-basis: calc(33.333% - 16px); /* Three cards per row, minus the gap */
+  box-sizing: border-box;
+  background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-7));
+}
+
+  
+  .section {
+    border-bottom: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+    padding-left: var(--mantine-spacing-md);
+    padding-right: var(--mantine-spacing-md);
+    padding-bottom: var(--mantine-spacing-md);
+  }
+  
+  .like {
+    color: var(--mantine-color-red-6);
+    width: rem(20px);
+    height: rem(20px);
+  }
+  
+  .label {
+    text-transform: uppercase;
+    font-size: var(--mantine-font-size-xs);
+    font-weight: 700;
+  }
